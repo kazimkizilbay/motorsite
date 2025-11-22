@@ -21,7 +21,7 @@ const debounce = (func, wait) => {
 
 const throttle = (func, limit) => {
     let inThrottle;
-    return function(...args) {
+    return function (...args) {
         if (!inThrottle) {
             func.apply(this, args);
             inThrottle = true;
@@ -77,7 +77,7 @@ function initHeaderScroll() {
 
 function initScrollReveal() {
     const revealElements = document.querySelectorAll('.scroll-reveal');
-    
+
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px'
@@ -210,7 +210,7 @@ function initSmoothScroll() {
 
             e.preventDefault();
             const target = document.querySelector(href);
-            
+
             if (target) {
                 const headerOffset = 100;
                 const elementPosition = target.getBoundingClientRect().top;
@@ -231,17 +231,17 @@ function initSmoothScroll() {
 
 function initWhatsAppOrders() {
     const whatsappButtons = document.querySelectorAll('[data-whatsapp-product]');
-    
+
     whatsappButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
             const productName = button.getAttribute('data-whatsapp-product');
             const productPrice = button.getAttribute('data-whatsapp-price');
-            
+
             const message = `Merhaba! ${productName} ürününü satın almak istiyorum. (${productPrice})`;
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/905539250651?text=${encodedMessage}`;
-            
+
             window.open(whatsappUrl, '_blank');
         });
     });
@@ -253,7 +253,7 @@ function initWhatsAppOrders() {
 
 function initGalleryLightbox() {
     const galleryItems = document.querySelectorAll('.gallery-item');
-    
+
     galleryItems.forEach(item => {
         item.addEventListener('click', () => {
             const img = item.querySelector('img');
@@ -315,7 +315,7 @@ function initGalleryLightbox() {
 function initLoadingAnimation() {
     // Simple fade in when page loads
     document.body.style.opacity = '0';
-    
+
     window.addEventListener('load', () => {
         setTimeout(() => {
             document.body.style.transition = 'opacity 0.5s ease';
@@ -330,10 +330,10 @@ function initLoadingAnimation() {
 
 function initParallax() {
     const parallaxElements = document.querySelectorAll('[data-parallax]');
-    
+
     const handleParallax = () => {
         const scrolled = window.pageYOffset;
-        
+
         parallaxElements.forEach(el => {
             const speed = el.getAttribute('data-parallax') || 0.5;
             const yPos = -(scrolled * speed);
@@ -352,7 +352,7 @@ function initParallax() {
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🏍️ MOTOGRIP Site2 - Initializing...');
-    
+
     initLoadingAnimation();
     initScrollProgress();
     initHeaderScroll();
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initWhatsAppOrders();
     initGalleryLightbox();
     initParallax();
-    
+
     console.log('✅ MOTOGRIP Site2 - Ready!');
 });
 
