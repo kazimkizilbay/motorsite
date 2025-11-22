@@ -37,50 +37,497 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 </div>
+</header>
 
-<!-- Quick Links -->
-<div class="footer-section">
-    <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">Hızlı Erişim</h3>
-    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-        <a href="#products" class="footer-link">
-            <i class="fas fa-shopping-bag"></i>
-            Ürünler
-        </a>
-        <a href="#features" class="footer-link">
-            <i class="fas fa-star"></i>
-            Özellikler
-        </a>
-        <a href="#gallery" class="footer-link">
-            <i class="fas fa-images"></i>
-            Galeri
-        </a>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-bg">
+        <img src="assets/images/hero-bg.png" alt="Motorcycle Background">
+        <iframe
+            src="https://www.youtube.com/embed/CHwJyj4lxkg?autoplay=1&mute=1&controls=0&loop=1&playlist=CHwJyj4lxkg&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
+            title="Motorcycle Racing Background" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
-</div>
 
-<!-- Contact -->
-<div class="footer-section">
-    <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">İletişim</h3>
-    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-        <a href="tel:05539250651" class="footer-link">
-            <i class="fas fa-phone"></i>
-            0553 925 0651
-        </a>
-        <a href="mailto:info@motogrip.com.tr" class="footer-link">
-            <i class="fas fa-envelope"></i>
-            info@motogrip.com.tr
-        </a>
-        <a href="https://wa.me/905539250651" class="footer-link" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-            WhatsApp
-        </a>
+    <div class="hero-content">
+        <h1>
+            <span class="text-gradient">Sarsıntısız Sürüş,</span><br>
+            <span class="text-gradient-red">Maksimum Güvenlik</span>
+        </h1>
+        <p>
+            MOTOGRIP KL-61 ile yolun hakimi siz olun. Titreşimi unutun, yola odaklanın.
+            Premium kalite, 4 yastıklı titreşim modülü ve 2 yıl garanti.
+        </p>
+        <div class="hero-cta">
+            <a href="#products" class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i>
+                Ürünleri İncele
+            </a>
+            <a href="#features" class="btn btn-secondary">
+                <i class="fas fa-info-circle"></i>
+                Özellikler
+            </a>
+        </div>
     </div>
-</div>
-</div>
 
-<div class="footer-bottom">
-    <p>&copy; 2025 MOTOGRIP. Tüm hakları saklıdır.</p>
-</div>
-</div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down fa-2x"></i>
+    </div>
+</section>
+
+<!-- Product Section -->
+<section class="product-section" id="products">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">
+                Üstün Teknoloji, <span class="text-gradient-red">İki Varyant</span>
+            </h2>
+            <p class="section-subtitle">
+                4 Yastıklı Titreşim Modülü ile kameranızı koruyan, her koşulda güvenilir yol arkadaşınız.
+            </p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product Card 1: KL-61 -->
+            <div class="product-card glass scroll-reveal">
+                <div class="product-image-container">
+                    <!-- Carousel Images -->
+                    <img src="images/1.jpg" class="product-image active" alt="MOTOGRIP KL-61 - View 1">
+                    <img src="images/2.jpg" class="product-image" alt="MOTOGRIP KL-61 - View 2">
+                    <img src="images/3.jpg" class="product-image" alt="MOTOGRIP KL-61 - View 3">
+                    <img src="images/4.jpg" class="product-image" alt="MOTOGRIP KL-61 - View 4">
+                    <img src="images/5.jpg" class="product-image" alt="MOTOGRIP KL-61 - View 5">
+                    <img src="images/6.jpg" class="product-image" alt="MOTOGRIP KL-61 - View 6">
+
+                    <!-- Badge -->
+                    <div class="product-badge">
+                        <i class="fas fa-star"></i> BESTSELLER
+                    </div>
+
+                    <!-- Carousel Dots -->
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" data-index="0"></span>
+                        <span class="carousel-dot" data-index="1"></span>
+                        <span class="carousel-dot" data-index="2"></span>
+                        <span class="carousel-dot" data-index="3"></span>
+                        <span class="carousel-dot" data-index="4"></span>
+                        <span class="carousel-dot" data-index="5"></span>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h3 class="product-title">MOTOGRIP KL-61</h3>
+                    <p class="product-description">
+                        Standart ayna bağlantılı, titreşim önleyici modüllü tam set.
+                        Premium yapı ve üstün koruma.
+                    </p>
+
+                    <div class="product-footer">
+                        <span class="product-price">₺899</span>
+                        <button class="btn btn-whatsapp" data-whatsapp-product="MOTOGRIP KL-61"
+                            data-whatsapp-price="₺899">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Sipariş
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2: KL-61G -->
+            <div class="product-card glass scroll-reveal">
+                <div class="product-image-container">
+                    <!-- Carousel Images -->
+                    <img src="images/g1.jpg" class="product-image active" alt="MOTOGRIP KL-61G - View 1">
+                    <img src="images/g2.jpg" class="product-image" alt="MOTOGRIP KL-61G - View 2">
+                    <img src="images/g3.jpg" class="product-image" alt="MOTOGRIP KL-61G - View 3">
+                    <img src="images/g4.jpg" class="product-image" alt="MOTOGRIP KL-61G - View 4">
+                    <img src="images/g5.jpg" class="product-image" alt="MOTOGRIP KL-61G - View 5">
+
+                    <!-- Badge -->
+                    <div class="product-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-crown"></i> PRO
+                    </div>
+
+                    <!-- Carousel Dots -->
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" data-index="0"></span>
+                        <span class="carousel-dot" data-index="1"></span>
+                        <span class="carousel-dot" data-index="2"></span>
+                        <span class="carousel-dot" data-index="3"></span>
+                        <span class="carousel-dot" data-index="4"></span>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h3 class="product-title">MOTOGRIP KL-61G</h3>
+                    <p class="product-description">
+                        Gidon bağlantılı, ekstra güçlendirilmiş gövde yapısı.
+                        Maximum dayanıklılık ve stabilite.
+                    </p>
+
+                    <div class="product-footer">
+                        <span class="product-price">₺949</span>
+                        <button class="btn btn-whatsapp" data-whatsapp-product="MOTOGRIP KL-61G"
+                            data-whatsapp-price="₺949">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Sipariş
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">
+                Neden <span class="text-gradient-red">MOTOGRIP?</span>
+            </h2>
+            <p class="section-subtitle">
+                Premium kalite ve üstün teknoloji ile tasarlanmış özellikler
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 class="feature-title">1 Saniyede Kilit</h3>
+                <p class="feature-description">
+                    Akıllı kilitleme sistemi ile tek hareketle telefonunuzu sabitleyin ve yola çıkın.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="feature-title">4 Yastıklı Titreşim Modülü</h3>
+                <p class="feature-description">
+                    Özel modül yol darbelerini emer, telefonunuzun kamerasını ve OIS sistemini korur.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3 class="feature-title">Kamera Dostu Tasarım</h3>
+                <p class="feature-description">
+                    Lensi kapatmayan tasarımı sayesinde sürüş esnasında harika videolar kaydedin.
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-rotate"></i>
+                </div>
+                <h3 class="feature-title">360° Dönebilen Başlık</h3>
+                <p class="feature-description">
+                    İster yatay ister dikey. Navigasyon veya video kaydı için en iyi açıyı ayarlayın.
+                </p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-screen"></i>
+                </div>
+                <h3 class="feature-title">Geniş Uyumluluk</h3>
+                <p class="feature-description">
+                    5.4" – 7.2" arası tüm telefonlarla uyumlu. Kılıf ile kullanıma uygun (Max 16mm).
+                </p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+                <h3 class="feature-title">Çoklu Kullanım</h3>
+                <p class="feature-description">
+                    Motosiklet, ATV, Scooter veya Bisiklet. Her türlü gidon ve ayna tipine uygun.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Specs Section -->
+<section class="product-section" style="background: var(--color-dark-2);">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">
+                Teknik <span class="text-gradient-red">Özellikler</span>
+            </h2>
+        </div>
+
+        <div class="glass-strong scroll-reveal"
+            style="max-width: 800px; margin: 0 auto; padding: 3rem; border-radius: var(--radius-xl);">
+            <div style="display: grid; gap: 1.5rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="color: var(--color-gray-4); font-weight: 500;">
+                        <i class="fas fa-cube" style="margin-right: 0.5rem; color: var(--color-primary);"></i>
+                        Malzeme
+                    </span>
+                    <span style="font-weight: 600;">Güçlendirilmiş Polimer & Paslanmaz Çelik</span>
+                </div>
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="color: var(--color-gray-4); font-weight: 500;">
+                        <i class="fas fa-wrench" style="margin-right: 0.5rem; color: var(--color-primary);"></i>
+                        Montaj Tipi
+                    </span>
+                    <span style="font-weight: 600;">Ayna Dibi / Gidon (Opsiyonel)</span>
+                </div>
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="color: var(--color-gray-4); font-weight: 500;">
+                        <i class="fas fa-palette" style="margin-right: 0.5rem; color: var(--color-primary);"></i>
+                        Renk
+                    </span>
+                    <span style="font-weight: 600;">Mat Siyah</span>
+                </div>
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="color: var(--color-gray-4); font-weight: 500;">
+                        <i class="fas fa-mobile-screen-button"
+                            style="margin-right: 0.5rem; color: var(--color-primary);"></i>
+                        Uyumluluk
+                    </span>
+                    <span style="font-weight: 600;">5.4" - 7.2" Ekranlar</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem;">
+                    <span style="color: var(--color-gray-4); font-weight: 500;">
+                        <i class="fas fa-shield-halved" style="margin-right: 0.5rem; color: var(--color-primary);"></i>
+                        Garanti
+                    </span>
+                    <span style="font-weight: 600; color: var(--color-primary);">2 Yıl Distribütör Garantili</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">
+                Ürün <span class="text-gradient-red">Galerisi</span>
+            </h2>
+            <p class="section-subtitle">
+                MOTOGRIP KL-61 ve KL-61G modellerimizi yakından inceleyin
+            </p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- KL-61 Images -->
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/1.jpg" alt="MOTOGRIP KL-61 - Görünüm 1" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/2.jpg" alt="MOTOGRIP KL-61 - Görünüm 2" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/3.jpg" alt="MOTOGRIP KL-61 - Görünüm 3" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/4.jpg" alt="MOTOGRIP KL-61 - Görünüm 4" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/5.jpg" alt="MOTOGRIP KL-61 - Görünüm 5" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/6.jpg" alt="MOTOGRIP KL-61 - Görünüm 6" loading="lazy">
+            </div>
+
+            <!-- KL-61G Images -->
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/g1.jpg" alt="MOTOGRIP KL-61G - Görünüm 1" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/g2.jpg" alt="MOTOGRIP KL-61G - Görünüm 2" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/g3.jpg" alt="MOTOGRIP KL-61G - Görünüm 3" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/g4.jpg" alt="MOTOGRIP KL-61G - Görünüm 4" loading="lazy">
+            </div>
+            <div class="gallery-item glass scroll-reveal">
+                <img src="images/g5.jpg" alt="MOTOGRIP KL-61G - Görünüm 5" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="features-section" style="padding-top: 4rem;">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">
+                Kullanıcı <span class="text-gradient-red">Deneyimleri</span>
+            </h2>
+            <p class="section-subtitle">
+                Müşterilerimizin gerçek yorumları
+            </p>
+        </div>
+
+        <div class="product-grid" style="max-width: 1000px; margin: 0 auto;">
+            <!-- Review 1 -->
+            <div class="glass-strong scroll-reveal" style="padding: 2rem; border-radius: var(--radius-lg);">
+                <div style="display: flex; color: #FFD700; margin-bottom: 1rem; gap: 0.25rem;">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p style="color: var(--color-gray-5); font-style: italic; margin-bottom: 1.5rem; line-height: 1.8;">
+                    "Montajı inanılmaz kolay, tümseklerde telefon milim oynamıyor.
+                    Oynar başlı olması navigasyon kullanırken çok işime yarıyor. Kesinlikle tavsiye ederim."
+                </p>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div
+                        style="width: 3rem; height: 3rem; background: linear-gradient(135deg, var(--color-primary), var(--color-accent-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                        NA
+                    </div>
+                    <div>
+                        <h4 style="font-weight: 600; margin-bottom: 0.25rem;">N.... A....</h4>
+                        <span style="font-size: 0.875rem; color: var(--color-gray-4);">
+                            <i class="fas fa-check-circle" style="color: #4CAF50;"></i>
+                            Onaylı Satın Alım
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="glass-strong scroll-reveal" style="padding: 2rem; border-radius: var(--radius-lg);">
+                <div style="display: flex; color: #FFD700; margin-bottom: 1rem; gap: 0.25rem;">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p style="color: var(--color-gray-5); font-style: italic; margin-bottom: 1.5rem; line-height: 1.8;">
+                    "Beklediğimden çok daha iyi. Malzeme kalitesi elinize aldığınızda premium hissettiriyor.
+                    Fiyat/Performans olarak piyasadaki en iyi ürün diyebilirim."
+                </p>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div
+                        style="width: 3rem; height: 3rem; background: linear-gradient(135deg, var(--color-primary), var(--color-accent-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                        BB
+                    </div>
+                    <div>
+                        <h4 style="font-weight: 600; margin-bottom: 0.25rem;">B.... B....</h4>
+                        <span style="font-size: 0.875rem; color: var(--color-gray-4);">20 Kasım 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="product-section" style="text-align: center; padding: 6rem 0;">
+    <div class="container">
+        <div class="scroll-reveal" style="max-width: 700px; margin: 0 auto;">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">
+                Hemen Sipariş Verin
+            </h2>
+            <p class="section-subtitle" style="margin-bottom: 2.5rem; font-size: 1.125rem;">
+                WhatsApp üzerinden anında sipariş verin ve güvenli sürüşün keyfini çıkarın
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-whatsapp" data-whatsapp-product="MOTOGRIP KL-61" data-whatsapp-price="₺899"
+                    style="font-size: 1.125rem; padding: 1rem 2rem;">
+                    <i class="fab fa-whatsapp"></i>
+                    KL-61 Sipariş Ver (₺899)
+                </button>
+                <button class="btn btn-whatsapp" data-whatsapp-product="MOTOGRIP KL-61G" data-whatsapp-price="₺949"
+                    style="font-size: 1.125rem; padding: 1rem 2rem;">
+                    <i class="fab fa-whatsapp"></i>
+                    KL-61G Sipariş Ver (₺949)
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Brand -->
+            <div class="footer-section">
+                <div class="logo-wrapper" style="display: inline-flex; margin-bottom: 1rem;">
+                    <img src="images/logo.jpeg" alt="MOTOGRIP" class="logo">
+                </div>
+                <p style="color: var(--color-gray-4); margin-bottom: 1rem;">
+                    Premium Motosiklet Aksesuarları
+                </p>
+                <p style="color: var(--color-gray-4); font-size: 0.875rem;">
+                    Kalite, güvenlik ve performans bir arada.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">Hızlı Erişim</h3>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="#products" class="footer-link">
+                        <i class="fas fa-shopping-bag"></i>
+                        Ürünler
+                    </a>
+                    <a href="#features" class="footer-link">
+                        <i class="fas fa-star"></i>
+                        Özellikler
+                    </a>
+                    <a href="#gallery" class="footer-link">
+                        <i class="fas fa-images"></i>
+                        Galeri
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">İletişim</h3>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="tel:05539250651" class="footer-link">
+                        <i class="fas fa-phone"></i>
+                        0553 925 0651
+                    </a>
+                    <a href="mailto:info@motogrip.com.tr" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                        info@motogrip.com.tr
+                    </a>
+                    <a href="https://wa.me/905539250651" class="footer-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 MOTOGRIP. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
 </footer>
 
 <!-- Custom JavaScript -->
