@@ -278,12 +278,21 @@ function initGalleryLightbox() {
                 const lightboxImg = document.createElement('img');
                 lightboxImg.src = img.src;
                 lightboxImg.alt = img.alt;
+                // Load image first to get dimensions
+                lightboxImg.onload = function() {
+                    // Ensure image is centered and properly displayed
+                    this.style.objectPosition = 'center center';
+                };
                 lightboxImg.style.cssText = `
-                    max-width: 90%;
-                    max-height: 90%;
+                    max-width: 90vw;
+                    max-height: 90vh;
+                    width: auto;
+                    height: auto;
                     object-fit: contain;
+                    object-position: center center;
                     border-radius: 1rem;
                     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+                    background: #121212;
                 `;
 
                 overlay.appendChild(lightboxImg);
